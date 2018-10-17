@@ -1,0 +1,58 @@
+.IBM-Plex-Sans {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+#main-form {
+
+    margin-top: 3%;
+
+}
+
+div.container * {
+    max-width:100% !important
+}
+
+/*.container {*/
+    /*width: 60%;*/
+/*}*/
+
+#nav-description {
+
+    margin-left: 2%;
+    font-size: 2rem;
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+
+    .container {
+        margin-left: 1%;
+        margin-right: 1%;
+        width: 98%;
+
+    }
+
+}
+
+/*!* Large devices (laptops/desktops, 992px and up) *!*/
+@media only screen and (min-width: 992px) {
+
+    .container {
+
+        width: 80%;
+
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .container {
+
+        width: 60%;
+
+    }
+}

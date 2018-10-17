@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oxifus - Text Sharing Application</title>
+    <!--<link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100" rel="stylesheet">
+    <link rel="stylesheet" href="../css/simditor.css"/>
+    <link rel="stylesheet" href="css/bulma.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+<nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+            <h1 class="title IBM-Plex-Sans">Oxifus</h1>
+        </a>
+    </div>
+
+    <div class="navbar-menu" id="nav-description">
+        <div class="navbar-item">
+            <h1 class="IBM-Plex-Sans">A Simple Text Sharing Application</h1>
+        </div>
+
+
+    </div>
+</nav>
+
+
+
+
+<div class="container" id="main-form">
+    <form>
+        <div class="field">
+            <label class="label">标题</label>
+            <div class="control">
+                <input name="title" class="input" type="text" placeholder="Title">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">有效时间</label>
+            <div class="control">
+                <input name="expiredDuration" class="input" type="number" placeholder="e.g. 20(分钟)">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">正文</label>
+            <textarea id="editor" name="htmlContent"></textarea>
+        </div>
+        <div class="field">
+            <div class="control">
+                <button class="button is-primary" type="button" id="button-submit">分享</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="modal" id="modal-success">
+    <div class="modal-background" ></div>
+    <div class="modal-content">
+        <div class="notification is-info">
+            <p><strong>分享成功！</strong><a id="success-link" href=""></a></p>
+        </div>
+    </div>
+    <button class="modal-close is-large" id="modal-close" aria-label="close"></button>
+</div>
+
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="../js/module.js"></script>
+<script src="../js/hotkeys.js"></script>
+<script src="../js/simditor.js"></script>
+<script src="../js/main.js"></script>
+
+</body>
+</html>
